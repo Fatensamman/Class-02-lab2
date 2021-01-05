@@ -112,9 +112,9 @@ for (var i = 0; i < 6; i++) {
         alert('Try to guess again!');
     }
 }
+// console.log(programsIUse)
 alert('I used to work on these programs ; ' + programsIUse);
 
 alert('Your score is : ' + score + '/7');
-
 document.write('<h2>' + 'Welcome ' + username + ' I am glad to see you in my website ' + '</h2>');
 alert('Thank you ' + username + '^__^');

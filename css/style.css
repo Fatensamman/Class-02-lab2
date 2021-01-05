@@ -1,6 +1,7 @@
- h1, h2, h3 {text-align: center;font-size: 50px;margin: 20px; color: rgba(247, 221, 253, 0.932);}
+ h1, h3 {text-align: center;font-size: 50px;margin: 20px; color: rgba(247, 221, 253, 0.932);}
   li {color: rgba(247, 221, 253, 0.932); 
     font-size: 25px ; margin: 10px;}
+    /* h2 {font-size: 50px;margin: 8px; color: rgba(247, 221, 253, 0.932);} */
 body { background-color: rgb(12, 1, 15);}
 p {color: rgba(247, 221, 253, 0.932);}
 #footer {color: rgba(247, 221, 253, 0.932); 
