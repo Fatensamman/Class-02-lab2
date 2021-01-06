@@ -26,7 +26,7 @@ for (var i = 0; i < 2; i++) {
 }
 var quistion2;
 for (var i = 0; i < 2; i++) {
-     quistion2 = prompt('Am I an Architect? yes/no');
+    quistion2 = prompt('Am I an Architect? yes/no');
 
     if (quistion2.toLowerCase() === "yes" || quistion2.toLowerCase() === "y") {
         //console.log('Q2: ' + ' its correct');
@@ -43,7 +43,7 @@ for (var i = 0; i < 2; i++) {
 }
 var quistion3;
 for (var i = 0; i < 2; i++) {
-     quistion3 = prompt('Did I work at Semat consultant engineering company? yes/no');
+    quistion3 = prompt('Did I work at Semat consultant engineering company? yes/no');
 
     if (quistion3.toLowerCase() === "no" || quistion3.toLowerCase() === "n") {
         // console.log('Q3: ' + ' Oops its wrong');
@@ -90,7 +90,7 @@ for (var i = 0; i < 2; i++) {
 }
 var quistion6;
 for (var i = 0; i < 4; i++) {
-     quistion6 = prompt('What is my favourite Number?');
+    quistion6 = prompt('What is my favourite Number?');
     if (quistion6 === '7') {
         score++;
         alert('Thats right');
@@ -105,18 +105,36 @@ for (var i = 0; i < 4; i++) {
 }
 alert('The correct answer is 7');
 
-var programsIUse = ['autocad', '3dsmax', 'revit'];
+// quistion 7 
+var programsIUse = ['autocad', '3dsmax', 'revit', 'photoshop'];
 var siteOwenPrograms;
-for (var i = 0; i < 6; i++) {
-     siteOwenPrograms = prompt('which is the program that I use very often? ');
-    if (siteOwenPrograms.toLowerCase() === programsIUse[0] || siteOwenPrograms.toLowerCase() === programsIUse[1] || siteOwenPrograms.toLowerCase() === programsIUse[2]) {
-        score++
-        alert('Thats right you are the best');
-        break;
-    } else {
-        alert('Try to guess again!');
+var j = 0;
+var correctanswer = false;
+while (j < 7 && !correctanswer) {
+    siteOwenPrograms = prompt('which is the program that I use very often? ');
+    for (var i = 0; i < programsIUse.length; i++) {
+
+        if (programsIUse[i] === siteOwenPrograms.toLowerCase()){
+            score++
+            alert('Thats right you are the best');
+            correctanswer = true
+            break;
+        }
     }
 }
+
+// var programsIUse = ['autocad', '3dsmax', 'revit'];
+// var siteOwenPrograms;
+// for (var i = 0; i < 6; i++) {
+//      siteOwenPrograms = prompt('which is the program that I use very often? ');
+//     if (siteOwenPrograms.toLowerCase() === programsIUse[0] || siteOwenPrograms.toLowerCase() === programsIUse[1] || siteOwenPrograms.toLowerCase() === programsIUse[2]) {
+//         score++
+//         alert('Thats right you are the best');
+//         break;
+//     } else {
+//         alert('Try to guess again!');
+//     }
+// }
 // console.log(programsIUse)
 alert('I used to work on these programs ; ' + programsIUse);
 
