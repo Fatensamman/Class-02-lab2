@@ -68,10 +68,15 @@ function attemptCount(message, num) {
             alert('Thats right');
             break;
         } else {
-            if (questionX >= '5' && questionX <= '9' && questionX !== '7') {
-                alert('Thats too hot');
+            if (questionX > 7) {
+                alert('Thats too high');
             } else {
-                alert('thats too cold');
+                alert('thats too low');
+                // if (questionX >= '5' && questionX <= '9' && questionX !== '7') {
+                //     alert('Thats too hot');
+                // } else {
+                //     alert('thats too cold');
+                // }
             }
         }
     }
@@ -86,11 +91,13 @@ function q7(message, num) {
         siteOwenPrograms = prompt('which is the program that I use very often? ');
         for (var i = 0; i < programsIUse.length; i++) {
             if (programsIUse[i] === siteOwenPrograms.toLowerCase()) {
-                score++
+                score++;
                 alert('Thats right you are the best');
-                correctanswer = true
+                correctanswer = true;
                 break;
             }
         }
+        j++;  
     }
+    
 }
