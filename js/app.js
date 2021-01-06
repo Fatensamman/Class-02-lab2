@@ -2,9 +2,9 @@
 var score = 0
 var username = prompt('Welcome to my website ^__^ What is your name?');
 console.log('username:' + username);
-
+var quistion1;
 for (var i = 0; i < 2; i++) {
-    var quistion1 = prompt('Do I live in Oman? yes/no');
+    quistion1 = prompt('Do I live in Oman? yes/no');
 
     if (quistion1.toLowerCase() === "yes" || quistion1.toLowerCase() === "y") {
         //console.log('Q1: ' + ' Oops its wrong');
@@ -24,8 +24,9 @@ for (var i = 0; i < 2; i++) {
         // }
     }
 }
+var quistion2;
 for (var i = 0; i < 2; i++) {
-    var quistion2 = prompt('Am I an Architect? yes/no');
+     quistion2 = prompt('Am I an Architect? yes/no');
 
     if (quistion2.toLowerCase() === "yes" || quistion2.toLowerCase() === "y") {
         //console.log('Q2: ' + ' its correct');
@@ -40,8 +41,9 @@ for (var i = 0; i < 2; i++) {
         }
     }
 }
+var quistion3;
 for (var i = 0; i < 2; i++) {
-    var quistion3 = prompt('Did I work at Semat consultant engineering company? yes/no');
+     quistion3 = prompt('Did I work at Semat consultant engineering company? yes/no');
 
     if (quistion3.toLowerCase() === "no" || quistion3.toLowerCase() === "n") {
         // console.log('Q3: ' + ' Oops its wrong');
@@ -56,8 +58,9 @@ for (var i = 0; i < 2; i++) {
         }
     }
 }
+var quistion4;
 for (var i = 0; i < 2; i++) {
-    var quistion4 = prompt('Do I use softwares to show my thoughts? yes/no');
+    quistion4 = prompt('Do I use softwares to show my thoughts? yes/no');
     if (quistion4.toLowerCase() === "yes" || quistion4.toLowerCase() === "y") {
         //console.log('Q4: ' + ' its correct');
         alert('Correct! ' + username + ' you are the best');
@@ -70,8 +73,9 @@ for (var i = 0; i < 2; i++) {
         }
     }
 }
+var quistion5;
 for (var i = 0; i < 2; i++) {
-    var quistion5 = prompt('Do I like candycrush game? yes/no');
+    quistion5 = prompt('Do I like candycrush game? yes/no');
     if (quistion5.toLowerCase() === "yes" || quistion5.toLowerCase() === "y") {
         //console.log('Q5: ' + ' Oops its wrong');
         alert('Oops! ' + username + ' try to guess again');
@@ -84,9 +88,9 @@ for (var i = 0; i < 2; i++) {
         }
     }
 }
-
+var quistion6;
 for (var i = 0; i < 4; i++) {
-    var quistion6 = prompt('What is my favourite Number?');
+     quistion6 = prompt('What is my favourite Number?');
     if (quistion6 === '7') {
         score++;
         alert('Thats right');
@@ -102,8 +106,9 @@ for (var i = 0; i < 4; i++) {
 alert('The correct answer is 7');
 
 var programsIUse = ['autocad', '3dsmax', 'revit'];
+var siteOwenPrograms;
 for (var i = 0; i < 6; i++) {
-    var siteOwenPrograms = prompt('which is the program that I use very often? ');
+     siteOwenPrograms = prompt('which is the program that I use very often? ');
     if (siteOwenPrograms.toLowerCase() === programsIUse[0] || siteOwenPrograms.toLowerCase() === programsIUse[1] || siteOwenPrograms.toLowerCase() === programsIUse[2]) {
         score++
         alert('Thats right you are the best');
